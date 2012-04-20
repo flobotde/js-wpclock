@@ -8,3 +8,11 @@ Wallpaper clock images can include information like current time, date, weekday,
 
 ##### Requirements
 CSS3 compatible, javascript enabled browser
+jQuery
+
+##### Use
+Download js-wpclock and open index.html in your browser for a detailed Instruction
+
+##### License
+GPL V3 (READ LICENSE)
+
