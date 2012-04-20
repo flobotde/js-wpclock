@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>js-wpclock</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Florian Richter"/>
+    <meta name="Description" content=""/>
+    <script src="js/js-wpclock.js"></script>
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <style>
+      body{
+	        background: #217fb5 url('img/bg.jpg') no-repeat center center fixed;
+            font-family: Verdana, sans-serif;
+	        font-size: 0.95em;
+            color: PowderBlue;
+          }
+      a { color: lightgrey; }
+    </style>
+    <script>
+      jQuery(document).ready(function($) {
+        startClock($,'../img/','analog');
+      });
+    </script>
+
+</head>
+<body>
+  <h1>js-wpclock</h1>
+  <h2>Description</h2>
+    <p>js-wpclock can be used to display a clock as background image for a HTML website.</p>
+    <p>It uses the images that can be unzipped from wallpaperclock (.wcz) files which can be downloaded for free from <a href="http://www.vladstudio.com/wallpaperclock" target="_blank">http://www.vladstudio.com/wallpaperclock</a> or can be designed by yourself (<a href="http://www.vladstudio.com/wallpaperclock_create/" target="_blank">http://www.vladstudio.com/wallpaperclock_create/</a>).</p>
+    <p>Wallpaper clock images can include information like current time, date, weekday, zodiac sign and moonphase, depending on availability in wcz file.</p>
+  <h2>Requirements</h2>
+    <ul>
+      <li>CSS3 compatible browser</li>
+      <li>jQuery (<a href="http://jquery.com/" target="_blank">http://jquery.com/</a>)</li>
+    </ul>
+  <h2>Use</h2>
+    <p>Download a .wcz package and unzip it and place the images in a directory (eg /img/) where your images for your webpage reside, or create your own clock images.</p>
+    <p>In your HTML Head Section load the needed JavaScript Files, eg.:
+    <pre>
+      <code>
+         &lt;script src="js/js-wpclock.js"&gt;&lt;/script&gt;
+         &lt;script src="http://code.jquery.com/jquery-1.7.2.min.js"&gt;&lt;/script&gt;
+      </code>
+    </pre>
+    and start the clock with the following code
+    <pre>
+      <code>
+         &lt;script&gt;
+           jQuery(document).ready(function($) {
+             startClock($,'../img/','analog');
+            });
+         &lt;/script&gt;
+      </code>
+    </pre>
+    Parameters:<br/>
+    <ol>
+      <li>$ is always jQuery</li>
+      <li>Directory Path where the clock images are, relative to the JS-File</li>
+      <li>boolean: is the clock digital/analog?<br/>
+        digital: has hour0.png to hour23.png<br/>
+        analog: has hour0.png to hour59.png<br/>
+      </li>
+    </ol>
+    </p>
+    <h2>License</h2>
+    <p><a href="LICENSE" target="new">GPL V3</a></p>
+    <h2>Greetings</h2>
+    <p><a href="http://github.com" target="new">github.com</a></p>
+    <p><a href="https://launchpad.net/wpclock" target="new">launchpad.net/wpclock</a></p>
+</body>
+</html>
